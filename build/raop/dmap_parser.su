@@ -1,0 +1,8 @@
+dmap_parser.c:359:17:dmap_read_u32	32	static
+dmap_parser.c:370:17:dmap_read_u64	32	static
+dmap_parser.c:332:12:dmap_field_sort	32	static
+dmap_parser.c:385:12:dmap_parse_internal	96	static
+dmap_parser.c:322:5:dmap_version	32	static
+dmap_parser.c:326:13:dmap_version_string	32	static
+dmap_parser.c:342:13:dmap_name_from_code	48	static
+dmap_parser.c:543:5:dmap_parse	32	static

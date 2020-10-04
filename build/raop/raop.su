@@ -1,0 +1,11 @@
+raop.c:859:13:base64_pad	32	static
+raop.c:727:13:search_remote	64	static
+raop.c:937:12:base64_decode	32	static
+raop.c:662:6:cleanup_rtsp	32	static
+raop.c:958:13:on_dmap_string	32	static
+raop.c:423:13:handle_rtsp	400	static
+raop.c:370:13:rtsp_thread	64	static
+raop.c:115:20:raop_create	256	static
+raop.c:212:6:raop_abort	32	static
+raop.c:218:6:raop_delete	32	static
+raop.c:278:6:raop_cmd	624	static

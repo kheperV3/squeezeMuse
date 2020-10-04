@@ -30,7 +30,7 @@ void *audio_calloc(size_t nmemb, size_t size) {
 	return calloc(nmemb, size);
 }
 
-int	pthread_create_name(pthread_t *thread, _CONST pthread_attr_t  *attr, 
+int	pthread_create_name(pthread_t *thread, const pthread_attr_t  *attr, 
 				   void *(*start_routine)( void * ), void *arg, char *name) {
 	esp_pthread_cfg_t cfg = esp_pthread_get_default_config(); 
 	cfg.thread_name = name; 

@@ -1,0 +1,1 @@
+v0.5.667-v3.1.5-ESP32-A1S-maste squeezelite v4.0.1-441-g6093407d7

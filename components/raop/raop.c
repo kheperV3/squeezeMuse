@@ -106,7 +106,8 @@ static int 		base64_decode(const char *str, void *data);
 
 
 extern char private_key[];
-enum { RSA_MODE_KEY, RSA_MODE_AUTH };
+
+enum { RSA_MODE_KEY, RSA_MODE_AUTH };
 
 static void on_dmap_string(void *ctx, const char *code, const char *name, const char *buf, size_t len);
 
@@ -117,7 +118,8 @@ struct raop_ctx_s *raop_create(struct in_addr host, char *name,
 	struct raop_ctx_s *ctx = malloc(sizeof(struct raop_ctx_s));
 	struct sockaddr_in addr;
 	char id[64];
-#ifdef WIN32
+
+#ifdef WIN32
 	socklen_t nlen = sizeof(struct sockaddr);
 	char *txt[] = { "am=airesp32", "tp=UDP", "sm=false", "sv=false", "ek=1",
 					"et=0,1", "md=0,1,2", "cn=0,1", "ch=2",
@@ -183,15 +185,19 @@ struct raop_ctx_s *raop_create(struct in_addr host, char *name,
 	getsockname(ctx->sock, (struct sockaddr *) &addr, &nlen);
 	ctx->port = ntohs(addr.sin_port);
 #endif
-	ctx->running = true;
-		memcpy(ctx->mac, mac, 6);
+
+	ctx->running = true;
+	
+	memcpy(ctx->mac, mac, 6);
 	snprintf(id, 64, "%02X%02X%02X%02X%02X%02X@%s",  mac[0], mac[1], mac[2], mac[3], mac[4], mac[5], name);
-#ifdef WIN32
+
+#ifdef WIN32
 	// seems that Windows snprintf does not add NULL char if actual size > max
 	id[63] = '\0';
 	ctx->svc = mdnsd_register_svc(ctx->svr, id, "_raop._tcp.local", ctx->port, NULL, (const char**) txt);
 	pthread_create(&ctx->thread, NULL, &rtsp_thread, ctx);
-#else
+
+#else
 	LOG_INFO("starting mDNS with %s", id);
 	ESP_ERROR_CHECK( mdns_service_add(id, "_raop", "_tcp", ctx->port, txt, sizeof(txt) / sizeof(mdns_txt_item_t)) );
 	
@@ -754,7 +760,8 @@ static void search_remote(void *args) {
  }
 #endif
 
-/*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
 static char *rsa_apply(unsigned char *input, int inlen, int *outlen, int mode)
 {
 	static char super_secret_key[] =
@@ -922,8 +929,7 @@ static unsigned int token_decode(const char *token)
 	else
 		val += pos(token[i]);
 	}
-	if (marker > 2)
-	return DECODE_ERROR;
+	if (marker > 2)return DECODE_ERROR;
 	return (marker << 24) | val;
 }
 

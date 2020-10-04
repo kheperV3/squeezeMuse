@@ -1,0 +1,14 @@
+util.c:428:12:read_line.constprop	48	static
+util.c:52:11:get_localhost	48	static
+util.c:116:5:shutdown_socket	32	static
+util.c:133:5:bind_socket	64	static
+util.c:171:5:conn_socket	48	static
+util.c:302:7:strextract	32	static
+util.c:493:7:kd_lookup	32	static
+util.c:505:6:kd_add	32	static
+util.c:519:6:kd_free	32	static
+util.c:354:6:http_parse	304	static
+util.c:533:7:kd_dump	64	static
+util.c:472:7:http_send	48	static
+util.c:570:6:free_metadata	32	static
+util.c:584:5:_fprintf	80	static

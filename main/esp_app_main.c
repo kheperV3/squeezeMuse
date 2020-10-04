@@ -367,6 +367,9 @@ void app_main()
 
 	ESP_LOGI(TAG,"Setting up config subsystem.");
 	config_init();
+// CLK_OUT1 ==> MCLK
+        PIN_FUNC_SELECT(PERIPHS_IO_MUX_GPIO0_U, FUNC_GPIO0_CLK_OUT1);
+        WRITE_PERI_REG(PIN_CTRL, READ_PERI_REG(PIN_CTRL)& 0xFFFFFFF0);
 
 	ESP_LOGD(TAG,"Creating event group for wifi");
 	wifi_event_group = xEventGroupCreate();

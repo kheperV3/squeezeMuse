@@ -50,7 +50,7 @@ extern u8_t custom_player_id;
 
 uint32_t 	_gettime_ms_(void);
 
-int			pthread_create_name(pthread_t *thread, _CONST pthread_attr_t  *attr, 
+int			pthread_create_name(pthread_t *thread, const pthread_attr_t  *attr, 
 				   void *(*start_routine)( void * ), void *arg, char *name);
 
 // must provide	of #define as empty macros		

@@ -1,0 +1,12 @@
+raop_sink.c:95:13:cmd_handler	80	static
+raop_sink.c:76:13:raop_next	32	static
+raop_sink.c:70:13:raop_prev	32	static
+raop_sink.c:64:13:raop_stop	32	static
+raop_sink.c:52:13:raop_pause	32	static
+raop_sink.c:58:13:raop_play	32	static
+raop_sink.c:46:13:raop_toggle	32	static
+raop_sink.c:40:13:raop_volume_down	32	static
+raop_sink.c:34:13:raop_volume_up	32	static
+raop_sink.c:144:6:raop_sink_deinit	32	static
+raop_sink.c:152:6:raop_sink_init	144	static
+raop_sink.c:186:6:raop_disconnect	32	static

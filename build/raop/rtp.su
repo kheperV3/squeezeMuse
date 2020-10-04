@@ -1,0 +1,8 @@
+rtp.c:794:13:rtp_request_resend	64	static
+rtp.c:760:13:rtp_request_timing	96	static
+rtp.c:578:13:rtp_thread_func	160	static
+rtp.c:300:6:rtp_end	32	static
+rtp.c:211:12:rtp_init	160	static
+rtp.c:337:6:rtp_flush	48	static
+rtp.c:359:6:rtp_flush_release	32	static
+rtp.c:365:6:rtp_record	48	static
