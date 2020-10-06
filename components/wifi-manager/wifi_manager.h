@@ -42,6 +42,8 @@ extern "C" {
 #include "squeezelite-ota.h"
 #include "cJSON.h"
 
+#define RECOVERY_APPLICATION 0
+
 #ifndef RECOVERY_APPLICATION
 #error "RECOVERY_APPLICATION not defined. Defaulting to squeezelite"
 #endif

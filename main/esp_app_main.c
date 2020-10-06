@@ -444,5 +444,8 @@ void app_main()
 		ESP_LOGE(TAG,"Restarted to application partition. We're not going to perform OTA!");
 #endif
 		free(fwurl);
+// CLK_OUT1 ==> MCLK
+        PIN_FUNC_SELECT(PERIPHS_IO_MUX_GPIO0_U, FUNC_GPIO0_CLK_OUT1);
+        WRITE_PERI_REG(PIN_CTRL, READ_PERI_REG(PIN_CTRL)& 0xFFFFFFF0);
 	}
 }
