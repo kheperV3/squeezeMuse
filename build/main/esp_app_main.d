@@ -149,7 +149,8 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
  /home/ros/esp/squeezeMuse/components/services/buttons.h \
  /home/ros/esp/squeezeMuse/components/services/infrared.h \
  /home/ros/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
- /home/ros/esp/squeezeMuse/components/telnet/telnet.h
+ /home/ros/esp/squeezeMuse/components/telnet/telnet.h \
+ /home/ros/esp/esp-idf/components/driver/include/driver/i2c.h
 
 /home/ros/esp/squeezeMuse/main/platform_esp32.h:
 
@@ -452,4 +453,6 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
 /home/ros/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
 /home/ros/esp/squeezeMuse/components/telnet/telnet.h:
+
+/home/ros/esp/esp-idf/components/driver/include/driver/i2c.h:
 /home/ros/esp/squeezeMuse/main/./esp_app_main.c:

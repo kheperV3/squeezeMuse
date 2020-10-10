@@ -400,7 +400,6 @@ static struct {
     struct arg_int *wakeup_gpio_level;
     struct arg_end *end;
 } light_sleep_args;
-
 static int light_sleep(int argc, char **argv)
 {
     int nerrors = arg_parse(argc, argv, (void **) &light_sleep_args);
