@@ -230,6 +230,7 @@ const char * get_certificate(){
 #define DEFAULT_NAME_WITH_MAC(var,defval) char var[strlen(defval)+sizeof(macStr)]; strcpy(var,defval); strcat(var,macStr)
 void register_default_nvs(){
 	uint8_t mac[6];
+        static char boutons[200];
 	char macStr[LOCAL_MAC_SIZE+1];
 	char default_command_line[strlen(CONFIG_DEFAULT_COMMAND_LINE)+sizeof(macStr)];
 
@@ -305,9 +306,18 @@ void register_default_nvs(){
 	ESP_LOGD(TAG,"Registering default value for key %s, value %s", "bypass_wm", "0");
 	config_set_default(NVS_TYPE_STR, "bypass_wm", "0", 0);
 
+
+	strcpy(boutons, "[");
+        strcat(boutons, "{\"gpio\":36, \"type\":\"BUTTON_LOW\", \"normal\":{\"pressed\":\"ACTRLS_VOLDOWN\"}}");
+        strcat(boutons, ",{\"gpio\":39, \"type\":\"BUTTON_LOW\",\"normal\":{\"pressed\":\"ACTRLS_VOLUP\"}}");
+        strcat(boutons, "]");
+        //printf("%s\n", boutons);
+
+        store_nvs_value(NVS_TYPE_STR,"boutons", boutons);
+        store_nvs_value(NVS_TYPE_STR,"actrls_config", "boutons");
 	ESP_LOGD(TAG,"Registering default Audio control board type %s, value ","actrls_config");
-	config_set_default(NVS_TYPE_STR, "actrls_config", "", 0);
-	
+	config_set_default(NVS_TYPE_STR, "actrls_config", "boutons", 0);
+
 	ESP_LOGD(TAG,"Registering default value for key %s", "lms_ctrls_raw");
 	config_set_default(NVS_TYPE_STR, "lms_ctrls_raw", "n", 0);
 	
@@ -362,13 +372,10 @@ void register_default_nvs(){
         ESP_LOGD(TAG,"Registering default value for key %s", "spdif_config");
 	config_set_default(NVS_TYPE_STR, "spdif_config", "", 0);
 	
-	ESP_LOGD(TAG,"Registering default value for key %s, value %s", "dac_config", "bck=5,ws=25,do=26,sda=18,scl=23,i2c=16,model=I2S");
+	ESP_LOGD(TAG,"Registering default value for key %s, value %s", "dac_config", "bck=5,ws=25,do=26,sda=18,scl=23,model=I2S");
 	config_set_default(NVS_TYPE_STR, "dac_config", "bck=5,ws=25,do=26,sda=18,scl=23,model=I2S", 0);
 	
-	ESP_LOGD(TAG,"Registering default value for key %s, value %s", "dac_controlset", "{\"init\":....");
-/*
-	config_set_default(NVS_TYPE_STR, "dac_controlset", "{\"init\": [{\"reg\": 0,\"val\": 128 },{ \"reg\": 0, \"val\": 0 },{ \"reg\": 25,\"val\": 4 },{ \"reg\": 1, \"val\": 80 }, { \"reg\": 2, \"val\": 243}, { \"reg\": 8, \"val\": 0 }, { \"reg\": 4, \"val\": 192 },{ \"reg\": 0, \"val\": 18 }, { \"reg\": 1, \"val\": 0 }, { \"reg\": 23, \"val\": 24 }, { \"reg\": 24, \"val\": 2 },{ \"reg\": 38, \"val\": 9 }, { \"reg\": 39, \"val\": 128 }, { \"reg\": 42, \"val\": 128	},{ \"reg\": 43, \"val\": 128 }, { \"reg\": 45, \"val\": 0 }, { \"reg\": 27, \"val\": 0 }, { \"reg\": 26, \"val\": 0 },{ \"reg\": 29, \"val\": 28 },{ \"reg\": 4, \"val\": 48},{ \"reg\": 25, \"val\": 0 }, { \"reg\": 46, \"val\": 33 }, { \"reg\": 47, \"val\": 33 },{ \"reg\": 2, \"val\": 0 }]}", 0);
-*/
+	ESP_LOGD(TAG,"Registering default value for key %s, value %s", "dac_controlset", "");
         config_set_default(NVS_TYPE_STR, "dac_controlset", "", 0);
 	
 	ESP_LOGD(TAG,"Registering default value for key %s, value %s", "jack_mutes_amp", "n");
@@ -462,48 +469,48 @@ void app_main()
 //
 /////////////////////////////////////////// 
 // reset 
-ES8388_Write_Reg(0, 0x80); 
-ES8388_Write_Reg(0, 0x00); 
+	ES8388_Write_Reg(0, 0x80); 
+	ES8388_Write_Reg(0, 0x00); 
 // mute
-ES8388_Write_Reg(25, 0x04);
-ES8388_Write_Reg(1, 0x50); 
+	ES8388_Write_Reg(25, 0x04);
+	ES8388_Write_Reg(1, 0x50); 
 //powerup
-ES8388_Write_Reg(2, 0x00);
+	ES8388_Write_Reg(2, 0x00);
 // slave mode
-ES8388_Write_Reg(8, 0x00);
+	ES8388_Write_Reg(8, 0x00);
 // DAC powerdown
-ES8388_Write_Reg(4, 0xC0);
+	ES8388_Write_Reg(4, 0xC0);
 // vmidsel/500k ADC/DAC idem
-ES8388_Write_Reg(0, 0x12);
+	ES8388_Write_Reg(0, 0x12);
 
-ES8388_Write_Reg(1, 0x00);
+	ES8388_Write_Reg(1, 0x00);
 // i2s 16 bits
-ES8388_Write_Reg(23, 0x18);
+	ES8388_Write_Reg(23, 0x18);
 // sample freq 256
-ES8388_Write_Reg(24, 0x02);
+	ES8388_Write_Reg(24, 0x02);
 // LIN2/RIN2 for mixer
-ES8388_Write_Reg(38, 0x09);
+	ES8388_Write_Reg(38, 0x09);
 // left DAC to left mixer
-ES8388_Write_Reg(39, 0x90);
+	ES8388_Write_Reg(39, 0x90);
 // right DAC to right mixer
-ES8388_Write_Reg(42, 0x90);
+	ES8388_Write_Reg(42, 0x90);
 // DACLRC ADCLRC idem
-ES8388_Write_Reg(43, 0x80);
-ES8388_Write_Reg(45, 0x00);
+	ES8388_Write_Reg(43, 0x80);
+	ES8388_Write_Reg(45, 0x00);
 // DAC volume max
-ES8388_Write_Reg(27, 0x00);
-ES8388_Write_Reg(26, 0x00);
+	ES8388_Write_Reg(27, 0x00);
+	ES8388_Write_Reg(26, 0x00);
 
-ES8388_Write_Reg(2 , 0xF0);
-ES8388_Write_Reg(2 , 0x00);
-ES8388_Write_Reg(29, 0x1C);
+	ES8388_Write_Reg(2 , 0xF0);
+	ES8388_Write_Reg(2 , 0x00);
+	ES8388_Write_Reg(29, 0x1C);
 // DAC power-up LOUT1/ROUT1 enabled
-ES8388_Write_Reg(4, 0x30);
+	ES8388_Write_Reg(4, 0x30);
 // unmute
-ES8388_Write_Reg(25, 0x00);
+	ES8388_Write_Reg(25, 0x00);
 // max volume
-ES8388_Write_Reg(46, 0x21);
-ES8388_Write_Reg(47, 0x21);
+	ES8388_Write_Reg(46, 0x21);
+	ES8388_Write_Reg(47, 0x21);
 
 ////////////////////////////////////////////////////////////////////
 
@@ -541,9 +548,11 @@ ES8388_Write_Reg(47, 0x21);
 	else {
 		bypass_wifi_manager=(strcmp(bypass_wm,"1")==0 ||strcasecmp(bypass_wm,"y")==0);
 	}
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 	ESP_LOGD(TAG,"Getting audio control mapping ");
+
 	char *actrls_config = config_alloc_get_default(NVS_TYPE_STR, "actrls_config", NULL, 0);
+
 	if (actrls_init(actrls_config) == ESP_OK) {
 		ESP_LOGD(TAG,"Initializing audio control buttons type %s", actrls_config);	
 	} else {

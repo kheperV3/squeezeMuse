@@ -505,6 +505,7 @@ static esp_err_t actrls_init_json(const char *profile_name, bool create) {
 	actrls_config_t *config_root = NULL;
 	char *config;
 	const cJSON *button;
+        printf("1111111111111 %s\n",profile_name);
 	
 	if (!profile_name || !*profile_name) return ESP_OK;
 	
