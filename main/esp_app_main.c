@@ -308,8 +308,8 @@ void register_default_nvs(){
 
 
 	strcpy(boutons, "[");
-        strcat(boutons, "{\"gpio\":36, \"type\":\"BUTTON_LOW\", \"normal\":{\"pressed\":\"ACTRLS_VOLDOWN\"}}");
-        strcat(boutons, ",{\"gpio\":39, \"type\":\"BUTTON_LOW\",\"normal\":{\"pressed\":\"ACTRLS_VOLUP\"}}");
+        strcat(boutons, "{\"gpio\":36, \"type\":\"BUTTON_LOW\", \"normal\":{\"pressed\":\"ACTRLS_VOLDOWN\",\"released\":\"ACTRLS_NONE\"}}");
+        strcat(boutons, ",{\"gpio\":39, \"type\":\"BUTTON_LOW\",\"normal\":{\"pressed\":\"ACTRLS_VOLUP\",\"released\":\"ACTRLS_NONE\"}}");
         strcat(boutons, "]");
         //printf("%s\n", boutons);
 
@@ -440,6 +440,7 @@ void app_main()
 //
 /////////////////////////////////////////////////////////////////
 #define PA GPIO_NUM_21
+#define GLED GPIO_NUM_22
 #define SDA 18
 #define SCL 23
 
@@ -464,6 +465,10 @@ void app_main()
 	gpio_reset_pin(PA);
         gpio_set_direction(PA, GPIO_MODE_OUTPUT);
 	gpio_set_level(PA, 1);
+//green led validation (test)
+        gpio_reset_pin(GLED);
+        gpio_set_direction(GLED, GPIO_MODE_OUTPUT);
+        gpio_set_level(GLED, 0);
 
 ///////////// init ES8388
 //

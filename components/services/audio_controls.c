@@ -159,6 +159,21 @@ esp_err_t actrls_init(const char *profile_name) {
 	if (!err) return actrls_init_json(profile_name, true);
 	else return err;
 }
+/////////////////////////////////////////////////////////////
+// TEST for Muse board only
+//////////////////////////////////////////////////////////
+static void click(void *data)
+{
+        int gp = *(int*) data;
+        printf("Click bouton no %d !!!!\n",gp);
+#define GLED GPIO_NUM_22
+        gpio_set_level(GLED, 1);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
+        gpio_set_level(GLED, 0);
+        vTaskDelete(NULL);
+}
+
+
 
 /****************************************************************************************
  * 
@@ -166,7 +181,14 @@ esp_err_t actrls_init(const char *profile_name) {
 static void control_handler(void *client, button_event_e event, button_press_e press, bool long_press) {
 	actrls_config_t *key = (actrls_config_t*) client;
 	actrls_action_detail_t  action_detail;
-
+///////////////////////////////
+// for Muse board only
+/////////////////////////////////////
+        static int n=0;
+        if (n == 0){xTaskCreate(click, "click", 5000, &(key->gpio), 1, NULL);n = 1;}
+        else n = 0;
+//////////////////////////////////////////////////
+        printf("tip!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
 	// in raw mode, we just do normal action press *and* release, there is no longpress nor shift
 	if (current_raw_controls) {
 		ESP_LOGD(TAG, "calling action %u in raw mode", key->normal[0].action);
@@ -505,7 +527,6 @@ static esp_err_t actrls_init_json(const char *profile_name, bool create) {
 	actrls_config_t *config_root = NULL;
 	char *config;
 	const cJSON *button;
-        printf("1111111111111 %s\n",profile_name);
 	
 	if (!profile_name || !*profile_name) return ESP_OK;
 	
@@ -538,6 +559,8 @@ static esp_err_t actrls_init_json(const char *profile_name, bool create) {
 				esp_err_t loc_err = actrls_process_button(button, cur_config);
 				err = (err == ESP_OK) ? loc_err : err;
 				if (loc_err == ESP_OK) {
+if(cur_config->normal[0].name == NULL) cur_config->normal[0].name =" ";
+                      printf("===> %d %d --- %d  %s\n",cur_config->gpio,cur_config->type,(int)cur_config->normal[0].action, (char*)cur_config->normal[0].name);
 					if (create) button_create((void*) cur_config, cur_config->gpio,cur_config->type, 
 												cur_config->pull,cur_config->debounce, control_handler, 
 												cur_config->long_press, cur_config->shifter_gpio);
