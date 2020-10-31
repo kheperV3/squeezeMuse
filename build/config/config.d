@@ -1,11 +1,11 @@
-config.o: /home/ros/esp/squeezeMuse/components/config/config.c \
- /home/ros/esp/squeezeMuse/components/config/config.h \
+config.o: /home/ros/esp/squeezeMuseT/components/config/config.c \
+ /home/ros/esp/squeezeMuseT/components/config/config.h \
  /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/ros/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/ros/esp/squeezeMuse/components/config/nvs_utilities.h \
+ /home/ros/esp/squeezeMuseT/components/config/nvs_utilities.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
@@ -102,19 +102,19 @@ config.o: /home/ros/esp/squeezeMuse/components/config/config.c \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/timers.h
 
-/home/ros/esp/squeezeMuse/components/config/config.h:
+/home/ros/esp/squeezeMuseT/components/config/config.h:
 
 /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
 /home/ros/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/ros/esp/squeezeMuse/components/config/nvs_utilities.h:
+/home/ros/esp/squeezeMuseT/components/config/nvs_utilities.h:
 
 /home/ros/esp/esp-idf/components/esp_common/include/esp_system.h:
 
@@ -305,4 +305,4 @@ config.o: /home/ros/esp/squeezeMuse/components/config/config.c \
 /home/ros/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/timers.h:
-/home/ros/esp/squeezeMuse/components/config/./config.c:
+/home/ros/esp/squeezeMuseT/components/config/./config.c:

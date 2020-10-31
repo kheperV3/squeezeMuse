@@ -1,8 +1,8 @@
-console.o: /home/ros/esp/squeezeMuse/main/console.c \
+console.o: /home/ros/esp/squeezeMuseT/main/console.c \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
@@ -70,17 +70,17 @@ console.o: /home/ros/esp/squeezeMuse/main/console.c \
  /home/ros/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ros/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/ros/esp/esp-idf/components/newlib/platform_include/pthread.h \
- /home/ros/esp/squeezeMuse/main/platform_esp32.h \
+ /home/ros/esp/squeezeMuseT/main/platform_esp32.h \
  /home/ros/esp/esp-idf/components/pthread/include/esp_pthread.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/ros/esp/squeezeMuse/main/cmd_decl.h \
- /home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.h \
- /home/ros/esp/squeezeMuse/main/cmd_wifi.h \
- /home/ros/esp/squeezeMuse/components/cmd_nvs/cmd_nvs.h \
- /home/ros/esp/squeezeMuse/components/cmd_i2c/cmd_i2ctools.h \
- /home/ros/esp/squeezeMuse/components/squeezelite-ota/cmd_ota.h \
- /home/ros/esp/squeezeMuse/main/console.h \
- /home/ros/esp/squeezeMuse/components/wifi-manager/wifi_manager.h \
+ /home/ros/esp/squeezeMuseT/main/cmd_decl.h \
+ /home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.h \
+ /home/ros/esp/squeezeMuseT/main/cmd_wifi.h \
+ /home/ros/esp/squeezeMuseT/components/cmd_nvs/cmd_nvs.h \
+ /home/ros/esp/squeezeMuseT/components/cmd_i2c/cmd_i2ctools.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite-ota/cmd_ota.h \
+ /home/ros/esp/squeezeMuseT/main/console.h \
+ /home/ros/esp/squeezeMuseT/components/wifi-manager/wifi_manager.h \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h \
@@ -113,14 +113,14 @@ console.o: /home/ros/esp/squeezeMuse/main/console.c \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
- /home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/ros/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
  /home/ros/esp/esp-idf/components/json/cJSON/cJSON.h \
- /home/ros/esp/squeezeMuse/main/cmd_squeezelite.h \
- /home/ros/esp/squeezeMuse/components/config/config.h
+ /home/ros/esp/squeezeMuseT/main/cmd_squeezelite.h \
+ /home/ros/esp/squeezeMuseT/components/config/config.h
 
 /home/ros/esp/esp-idf/components/esp_common/include/esp_system.h:
 
@@ -128,7 +128,7 @@ console.o: /home/ros/esp/squeezeMuse/main/console.c \
 
 /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -264,27 +264,27 @@ console.o: /home/ros/esp/squeezeMuse/main/console.c \
 
 /home/ros/esp/esp-idf/components/newlib/platform_include/pthread.h:
 
-/home/ros/esp/squeezeMuse/main/platform_esp32.h:
+/home/ros/esp/squeezeMuseT/main/platform_esp32.h:
 
 /home/ros/esp/esp-idf/components/pthread/include/esp_pthread.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/ros/esp/squeezeMuse/main/cmd_decl.h:
+/home/ros/esp/squeezeMuseT/main/cmd_decl.h:
 
-/home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.h:
+/home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.h:
 
-/home/ros/esp/squeezeMuse/main/cmd_wifi.h:
+/home/ros/esp/squeezeMuseT/main/cmd_wifi.h:
 
-/home/ros/esp/squeezeMuse/components/cmd_nvs/cmd_nvs.h:
+/home/ros/esp/squeezeMuseT/components/cmd_nvs/cmd_nvs.h:
 
-/home/ros/esp/squeezeMuse/components/cmd_i2c/cmd_i2ctools.h:
+/home/ros/esp/squeezeMuseT/components/cmd_i2c/cmd_i2ctools.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite-ota/cmd_ota.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite-ota/cmd_ota.h:
 
-/home/ros/esp/squeezeMuse/main/console.h:
+/home/ros/esp/squeezeMuseT/main/console.h:
 
-/home/ros/esp/squeezeMuse/components/wifi-manager/wifi_manager.h:
+/home/ros/esp/squeezeMuseT/components/wifi-manager/wifi_manager.h:
 
 /home/ros/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:
 
@@ -350,7 +350,7 @@ console.o: /home/ros/esp/squeezeMuse/main/console.c \
 
 /home/ros/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.h:
 
 /home/ros/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
 
@@ -362,7 +362,7 @@ console.o: /home/ros/esp/squeezeMuse/main/console.c \
 
 /home/ros/esp/esp-idf/components/json/cJSON/cJSON.h:
 
-/home/ros/esp/squeezeMuse/main/cmd_squeezelite.h:
+/home/ros/esp/squeezeMuseT/main/cmd_squeezelite.h:
 
-/home/ros/esp/squeezeMuse/components/config/config.h:
-/home/ros/esp/squeezeMuse/main/./console.c:
+/home/ros/esp/squeezeMuseT/components/config/config.h:
+/home/ros/esp/squeezeMuseT/main/./console.c:

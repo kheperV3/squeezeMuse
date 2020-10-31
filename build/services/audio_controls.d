@@ -1,8 +1,8 @@
 audio_controls.o: \
- /home/ros/esp/squeezeMuse/components/services/audio_controls.c \
+ /home/ros/esp/squeezeMuseT/components/services/audio_controls.c \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/ros/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/ros/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -40,13 +40,13 @@ audio_controls.o: \
  /home/ros/esp/esp-idf/components/log/include/esp_log.h \
  /home/ros/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ros/esp/esp-idf/components/json/cJSON/cJSON.h \
- /home/ros/esp/squeezeMuse/components/services/buttons.h \
- /home/ros/esp/squeezeMuse/components/services/infrared.h \
+ /home/ros/esp/squeezeMuseT/components/services/buttons.h \
+ /home/ros/esp/squeezeMuseT/components/services/infrared.h \
  /home/ros/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /home/ros/esp/squeezeMuse/components/config/config.h \
+ /home/ros/esp/squeezeMuseT/components/config/config.h \
  /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h \
- /home/ros/esp/squeezeMuse/components/services/accessors.h \
+ /home/ros/esp/squeezeMuseT/components/services/accessors.h \
  /home/ros/esp/esp-idf/components/driver/include/driver/i2c.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/ros/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
@@ -74,13 +74,13 @@ audio_controls.o: \
  /home/ros/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ros/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/ros/esp/esp-idf/components/soc/include/hal/spi_types.h \
- /home/ros/esp/squeezeMuse/components/services/audio_controls.h
+ /home/ros/esp/squeezeMuseT/components/services/audio_controls.h
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -156,19 +156,19 @@ audio_controls.o: \
 
 /home/ros/esp/esp-idf/components/json/cJSON/cJSON.h:
 
-/home/ros/esp/squeezeMuse/components/services/buttons.h:
+/home/ros/esp/squeezeMuseT/components/services/buttons.h:
 
-/home/ros/esp/squeezeMuse/components/services/infrared.h:
+/home/ros/esp/squeezeMuseT/components/services/infrared.h:
 
 /home/ros/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/home/ros/esp/squeezeMuse/components/config/config.h:
+/home/ros/esp/squeezeMuseT/components/config/config.h:
 
 /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
-/home/ros/esp/squeezeMuse/components/services/accessors.h:
+/home/ros/esp/squeezeMuseT/components/services/accessors.h:
 
 /home/ros/esp/esp-idf/components/driver/include/driver/i2c.h:
 
@@ -224,5 +224,5 @@ audio_controls.o: \
 
 /home/ros/esp/esp-idf/components/soc/include/hal/spi_types.h:
 
-/home/ros/esp/squeezeMuse/components/services/audio_controls.h:
-/home/ros/esp/squeezeMuse/components/services/./audio_controls.c:
+/home/ros/esp/squeezeMuseT/components/services/audio_controls.h:
+/home/ros/esp/squeezeMuseT/components/services/./audio_controls.c:

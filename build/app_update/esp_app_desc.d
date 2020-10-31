@@ -1,7 +1,7 @@
 esp_app_desc.o: \
  /home/ros/esp/esp-idf/components/app_update/esp_app_desc.c \
  /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ros/esp/esp-idf/components/spi_flash/include/esp_partition.h \
@@ -17,7 +17,7 @@ esp_app_desc.o: \
 
 /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/app_update/include/esp_ota_ops.h:
 

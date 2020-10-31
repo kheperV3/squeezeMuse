@@ -1,7 +1,7 @@
 cmd_system.o: \
- /home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.c \
+ /home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.c \
  /home/ros/esp/esp-idf/components/log/include/esp_log.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/ros/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ros/esp/esp-idf/components/console/esp_console.h \
@@ -77,7 +77,7 @@ cmd_system.o: \
  /home/ros/esp/esp-idf/components/esp_rom/include/esp32/rom/uart.h \
  /home/ros/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/ros/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.h \
+ /home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.h \
  /home/ros/esp/esp-idf/components/spi_flash/include/esp_partition.h \
  /home/ros/esp/esp-idf/components/spi_flash/include/esp_flash.h \
  /home/ros/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
@@ -87,10 +87,10 @@ cmd_system.o: \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
- /home/ros/esp/squeezeMuse/main/platform_esp32.h \
+ /home/ros/esp/squeezeMuseT/main/platform_esp32.h \
  /home/ros/esp/esp-idf/components/pthread/include/esp_pthread.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/ros/esp/squeezeMuse/components/config/config.h \
+ /home/ros/esp/squeezeMuseT/components/config/config.h \
  /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/ros/esp/esp-idf/components/esp32/include/esp_sleep.h \
  /home/ros/esp/esp-idf/components/driver/include/driver/touch_pad.h \
@@ -99,7 +99,7 @@ cmd_system.o: \
 
 /home/ros/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
@@ -251,7 +251,7 @@ cmd_system.o: \
 
 /home/ros/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
-/home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.h:
+/home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.h:
 
 /home/ros/esp/esp-idf/components/spi_flash/include/esp_partition.h:
 
@@ -271,13 +271,13 @@ cmd_system.o: \
 
 /home/ros/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 
-/home/ros/esp/squeezeMuse/main/platform_esp32.h:
+/home/ros/esp/squeezeMuseT/main/platform_esp32.h:
 
 /home/ros/esp/esp-idf/components/pthread/include/esp_pthread.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/ros/esp/squeezeMuse/components/config/config.h:
+/home/ros/esp/squeezeMuseT/components/config/config.h:
 
 /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
@@ -288,4 +288,4 @@ cmd_system.o: \
 /home/ros/esp/esp-idf/components/soc/include/soc/touch_periph.h:
 
 /home/ros/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
-/home/ros/esp/squeezeMuse/components/cmd_system/./cmd_system.c:
+/home/ros/esp/squeezeMuseT/components/cmd_system/./cmd_system.c:

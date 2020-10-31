@@ -1,11 +1,11 @@
 http_server.o: \
- /home/ros/esp/squeezeMuse/components/wifi-manager/http_server.c \
- /home/ros/esp/squeezeMuse/components/wifi-manager/http_server.h \
- /home/ros/esp/squeezeMuse/components/wifi-manager/wifi_manager.h \
+ /home/ros/esp/squeezeMuseT/components/wifi-manager/http_server.c \
+ /home/ros/esp/squeezeMuseT/components/wifi-manager/http_server.h \
+ /home/ros/esp/squeezeMuseT/components/wifi-manager/wifi_manager.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
@@ -76,7 +76,7 @@ http_server.o: \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
  /home/ros/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
- /home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_types.h \
@@ -148,14 +148,14 @@ http_server.o: \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/icmp6.h \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/prot/icmp6.h \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/prot/tcp.h \
- /home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.h \
- /home/ros/esp/squeezeMuse/components/config/nvs_utilities.h \
+ /home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.h \
+ /home/ros/esp/squeezeMuseT/components/config/nvs_utilities.h \
  /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h \
- /home/ros/esp/squeezeMuse/components/config/config.h
+ /home/ros/esp/squeezeMuseT/components/config/config.h
 
-/home/ros/esp/squeezeMuse/components/wifi-manager/http_server.h:
+/home/ros/esp/squeezeMuseT/components/wifi-manager/http_server.h:
 
-/home/ros/esp/squeezeMuse/components/wifi-manager/wifi_manager.h:
+/home/ros/esp/squeezeMuseT/components/wifi-manager/wifi_manager.h:
 
 /home/ros/esp/esp-idf/components/esp_common/include/esp_system.h:
 
@@ -163,7 +163,7 @@ http_server.o: \
 
 /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -305,7 +305,7 @@ http_server.o: \
 
 /home/ros/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.h:
 
 /home/ros/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
 
@@ -449,11 +449,11 @@ http_server.o: \
 
 /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/prot/tcp.h:
 
-/home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.h:
+/home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.h:
 
-/home/ros/esp/squeezeMuse/components/config/nvs_utilities.h:
+/home/ros/esp/squeezeMuseT/components/config/nvs_utilities.h:
 
 /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
-/home/ros/esp/squeezeMuse/components/config/config.h:
-/home/ros/esp/squeezeMuse/components/wifi-manager/./http_server.c:
+/home/ros/esp/squeezeMuseT/components/config/config.h:
+/home/ros/esp/squeezeMuseT/components/wifi-manager/./http_server.c:

@@ -38,6 +38,9 @@ static esp_err_t actrls_process_action (const cJSON * member, actrls_config_t *c
 static esp_err_t actrls_init_json(const char *profile_name, bool create);
 static void control_rotary_handler(void *client, rotary_event_e event, bool long_press);
 static void rotary_timer( TimerHandle_t xTimer );
+//extern void museAction(void *data);
+
+
 
 static const actrls_config_map_t actrls_config_map[] =
 		{
@@ -159,6 +162,7 @@ esp_err_t actrls_init(const char *profile_name) {
 	if (!err) return actrls_init_json(profile_name, true);
 	else return err;
 }
+
 /////////////////////////////////////////////////////////////
 // TEST for Muse board only
 //////////////////////////////////////////////////////////
@@ -527,6 +531,7 @@ static esp_err_t actrls_init_json(const char *profile_name, bool create) {
 	actrls_config_t *config_root = NULL;
 	char *config;
 	const cJSON *button;
+int i;
 	
 	if (!profile_name || !*profile_name) return ESP_OK;
 	
@@ -559,11 +564,11 @@ static esp_err_t actrls_init_json(const char *profile_name, bool create) {
 				esp_err_t loc_err = actrls_process_button(button, cur_config);
 				err = (err == ESP_OK) ? loc_err : err;
 				if (loc_err == ESP_OK) {
-if(cur_config->normal[0].name == NULL) cur_config->normal[0].name =" ";
-                      printf("===> %d %d --- %d  %s\n",cur_config->gpio,cur_config->type,(int)cur_config->normal[0].action, (char*)cur_config->normal[0].name);
-					if (create) button_create((void*) cur_config, cur_config->gpio,cur_config->type, 
-												cur_config->pull,cur_config->debounce, control_handler, 
-												cur_config->long_press, cur_config->shifter_gpio);
+                                if(cur_config->normal[0].name == NULL) cur_config->normal[0].name =" ";
+                                printf("===> %d %d --- %d  %s\n",cur_config->gpio,cur_config->type,(int)cur_config->normal[0].action, (char*)cur_config->normal[0].name);
+                   
+				if (create) button_create((void*) cur_config, cur_config->gpio,cur_config->type, 
+												cur_config->pull,cur_config->debounce, control_handler, 												cur_config->long_press, cur_config->shifter_gpio);
 				} else {
 					ESP_LOGE(TAG,"Error parsing button structure.  Button will not be registered.");
 				}

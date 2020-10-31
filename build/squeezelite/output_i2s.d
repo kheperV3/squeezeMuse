@@ -1,6 +1,6 @@
 output_i2s.o: \
- /home/ros/esp/squeezeMuse/components/squeezelite/output_i2s.c \
- /home/ros/esp/squeezeMuse/components/squeezelite/squeezelite.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/output_i2s.c \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/squeezelite.h \
  /home/ros/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/ros/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
@@ -10,7 +10,7 @@ output_i2s.o: \
  /home/ros/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/ros/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_task.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/ros/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
@@ -79,8 +79,8 @@ output_i2s.o: \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
  /home/ros/esp/esp-idf/components/newlib/platform_include/pthread.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/embedded.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/slimproto.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/embedded.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/slimproto.h \
  /home/ros/esp/esp-idf/components/pthread/include/esp_pthread.h \
  /home/ros/esp/esp-idf/components/driver/include/driver/i2s.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_types.h \
@@ -113,13 +113,13 @@ output_i2s.o: \
  /home/ros/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h \
  /home/ros/esp/esp-idf/components/driver/include/driver/i2c.h \
  /home/ros/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/../tools/perf_trace.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/adac.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/../services/led.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/../services/monitor.h \
- /home/ros/esp/squeezeMuse/components/config/config.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/../tools/perf_trace.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/adac.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/../services/led.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/../services/monitor.h \
+ /home/ros/esp/squeezeMuseT/components/config/config.h \
  /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/../services/accessors.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/../services/accessors.h \
  /home/ros/esp/esp-idf/components/driver/include/driver/spi_master.h \
  /home/ros/esp/esp-idf/components/driver/include/driver/spi_common.h \
  /home/ros/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
@@ -128,10 +128,10 @@ output_i2s.o: \
  /home/ros/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ros/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/ros/esp/esp-idf/components/soc/include/hal/spi_types.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/equalizer.h \
- /home/ros/esp/squeezeMuse/components/squeezelite/../services/globdefs.h
+ /home/ros/esp/squeezeMuseT/components/squeezelite/equalizer.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite/../services/globdefs.h
 
-/home/ros/esp/squeezeMuse/components/squeezelite/squeezelite.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/squeezelite.h:
 
 /home/ros/esp/esp-idf/components/newlib/platform_include/errno.h:
 
@@ -151,7 +151,7 @@ output_i2s.o: \
 
 /home/ros/esp/esp-idf/components/esp_common/include/esp_task.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
@@ -289,9 +289,9 @@ output_i2s.o: \
 
 /home/ros/esp/esp-idf/components/newlib/platform_include/pthread.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/embedded.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/embedded.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/slimproto.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/slimproto.h:
 
 /home/ros/esp/esp-idf/components/pthread/include/esp_pthread.h:
 
@@ -357,19 +357,19 @@ output_i2s.o: \
 
 /home/ros/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/../tools/perf_trace.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/../tools/perf_trace.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/adac.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/adac.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/../services/led.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/../services/led.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/../services/monitor.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/../services/monitor.h:
 
-/home/ros/esp/squeezeMuse/components/config/config.h:
+/home/ros/esp/squeezeMuseT/components/config/config.h:
 
 /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/../services/accessors.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/../services/accessors.h:
 
 /home/ros/esp/esp-idf/components/driver/include/driver/spi_master.h:
 
@@ -387,7 +387,7 @@ output_i2s.o: \
 
 /home/ros/esp/esp-idf/components/soc/include/hal/spi_types.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/equalizer.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/equalizer.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite/../services/globdefs.h:
-/home/ros/esp/squeezeMuse/components/squeezelite/./output_i2s.c:
+/home/ros/esp/squeezeMuseT/components/squeezelite/../services/globdefs.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite/./output_i2s.c:

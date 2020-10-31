@@ -1,9 +1,9 @@
-esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
- /home/ros/esp/squeezeMuse/main/platform_esp32.h \
+esp_app_main.o: /home/ros/esp/squeezeMuseT/main/esp_app_main.c \
+ /home/ros/esp/squeezeMuseT/main/platform_esp32.h \
  /home/ros/esp/esp-idf/components/pthread/include/esp_pthread.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/ros/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
@@ -16,7 +16,7 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
  /home/ros/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /home/ros/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
  /home/ros/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/ros/esp/squeezeMuse/components/services/led.h \
+ /home/ros/esp/squeezeMuseT/components/services/led.h \
  /home/ros/esp/esp-idf/components/driver/include/driver/gpio.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/ros/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
@@ -131,28 +131,28 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/memp_priv.h \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
  /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
- /home/ros/esp/squeezeMuse/components/config/nvs_utilities.h \
+ /home/ros/esp/squeezeMuseT/components/config/nvs_utilities.h \
  /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/ros/esp/esp-idf/components/esp_http_server/include/http_server.h \
  /home/ros/esp/esp-idf/components/esp_http_server/include/esp_http_server.h \
  /home/ros/esp/esp-idf/components/nghttp/port/include/http_parser.h \
- /home/ros/esp/squeezeMuse/components/tools/trace.h \
- /home/ros/esp/squeezeMuse/components/wifi-manager/wifi_manager.h \
- /home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.h \
+ /home/ros/esp/squeezeMuseT/components/tools/trace.h \
+ /home/ros/esp/squeezeMuseT/components/wifi-manager/wifi_manager.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/ros/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
  /home/ros/esp/esp-idf/components/json/cJSON/cJSON.h \
- /home/ros/esp/squeezeMuse/components/config/config.h \
- /home/ros/esp/squeezeMuse/components/services/audio_controls.h \
- /home/ros/esp/squeezeMuse/components/services/buttons.h \
- /home/ros/esp/squeezeMuse/components/services/infrared.h \
+ /home/ros/esp/squeezeMuseT/components/config/config.h \
+ /home/ros/esp/squeezeMuseT/components/services/audio_controls.h \
+ /home/ros/esp/squeezeMuseT/components/services/buttons.h \
+ /home/ros/esp/squeezeMuseT/components/services/infrared.h \
  /home/ros/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
- /home/ros/esp/squeezeMuse/components/telnet/telnet.h \
+ /home/ros/esp/squeezeMuseT/components/telnet/telnet.h \
  /home/ros/esp/esp-idf/components/driver/include/driver/i2c.h
 
-/home/ros/esp/squeezeMuse/main/platform_esp32.h:
+/home/ros/esp/squeezeMuseT/main/platform_esp32.h:
 
 /home/ros/esp/esp-idf/components/pthread/include/esp_pthread.h:
 
@@ -160,7 +160,7 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
 
 /home/ros/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
@@ -186,7 +186,7 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
 
 /home/ros/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/ros/esp/squeezeMuse/components/services/led.h:
+/home/ros/esp/squeezeMuseT/components/services/led.h:
 
 /home/ros/esp/esp-idf/components/driver/include/driver/gpio.h:
 
@@ -416,7 +416,7 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
 
 /home/ros/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
 
-/home/ros/esp/squeezeMuse/components/config/nvs_utilities.h:
+/home/ros/esp/squeezeMuseT/components/config/nvs_utilities.h:
 
 /home/ros/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
@@ -426,11 +426,11 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
 
 /home/ros/esp/esp-idf/components/nghttp/port/include/http_parser.h:
 
-/home/ros/esp/squeezeMuse/components/tools/trace.h:
+/home/ros/esp/squeezeMuseT/components/tools/trace.h:
 
-/home/ros/esp/squeezeMuse/components/wifi-manager/wifi_manager.h:
+/home/ros/esp/squeezeMuseT/components/wifi-manager/wifi_manager.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.h:
 
 /home/ros/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
 
@@ -442,17 +442,17 @@ esp_app_main.o: /home/ros/esp/squeezeMuse/main/esp_app_main.c \
 
 /home/ros/esp/esp-idf/components/json/cJSON/cJSON.h:
 
-/home/ros/esp/squeezeMuse/components/config/config.h:
+/home/ros/esp/squeezeMuseT/components/config/config.h:
 
-/home/ros/esp/squeezeMuse/components/services/audio_controls.h:
+/home/ros/esp/squeezeMuseT/components/services/audio_controls.h:
 
-/home/ros/esp/squeezeMuse/components/services/buttons.h:
+/home/ros/esp/squeezeMuseT/components/services/buttons.h:
 
-/home/ros/esp/squeezeMuse/components/services/infrared.h:
+/home/ros/esp/squeezeMuseT/components/services/infrared.h:
 
 /home/ros/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
-/home/ros/esp/squeezeMuse/components/telnet/telnet.h:
+/home/ros/esp/squeezeMuseT/components/telnet/telnet.h:
 
 /home/ros/esp/esp-idf/components/driver/include/driver/i2c.h:
-/home/ros/esp/squeezeMuse/main/./esp_app_main.c:
+/home/ros/esp/squeezeMuseT/main/./esp_app_main.c:

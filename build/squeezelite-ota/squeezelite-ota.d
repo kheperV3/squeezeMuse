@@ -1,8 +1,8 @@
 squeezelite-ota.o: \
- /home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.c \
+ /home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.c \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/ros/esp/squeezeMuse/build/include/sdkconfig.h \
+ /home/ros/esp/squeezeMuseT/build/include/sdkconfig.h \
  /home/ros/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/ros/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/ros/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -87,10 +87,10 @@ squeezelite-ota.o: \
  /home/ros/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
  /home/ros/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ros/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.h \
- /home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.h \
+ /home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.h \
+ /home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.h \
  /home/ros/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
- /home/ros/esp/squeezeMuse/components/config/config.h \
+ /home/ros/esp/squeezeMuseT/components/config/config.h \
  /home/ros/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h \
  /home/ros/esp/esp-idf/components/soc/include/soc/efuse_periph.h \
  /home/ros/esp/esp-idf/components/soc/esp32/include/soc/efuse_reg.h \
@@ -103,7 +103,7 @@ squeezelite-ota.o: \
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/ros/esp/squeezeMuse/build/include/sdkconfig.h:
+/home/ros/esp/squeezeMuseT/build/include/sdkconfig.h:
 
 /home/ros/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -273,13 +273,13 @@ squeezelite-ota.o: \
 
 /home/ros/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-/home/ros/esp/squeezeMuse/components/cmd_system/cmd_system.h:
+/home/ros/esp/squeezeMuseT/components/cmd_system/cmd_system.h:
 
-/home/ros/esp/squeezeMuse/components/squeezelite-ota/squeezelite-ota.h:
+/home/ros/esp/squeezeMuseT/components/squeezelite-ota/squeezelite-ota.h:
 
 /home/ros/esp/esp-idf/components/app_update/include/esp_ota_ops.h:
 
-/home/ros/esp/squeezeMuse/components/config/config.h:
+/home/ros/esp/squeezeMuseT/components/config/config.h:
 
 /home/ros/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h:
 
@@ -294,4 +294,4 @@ squeezelite-ota.o: \
 /home/ros/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h:
 
 /home/ros/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
-/home/ros/esp/squeezeMuse/components/squeezelite-ota/./squeezelite-ota.c:
+/home/ros/esp/squeezeMuseT/components/squeezelite-ota/./squeezelite-ota.c:
